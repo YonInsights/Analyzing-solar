@@ -31,4 +31,45 @@ print(sierraleone_df.describe())
 print("\nTogo DataFrame Summary:")
 print(togo_df.describe())
 
+#Matplotlib and Seaborn to visualize the data
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plotting GHI for each dataset
+plt.figure(figsize=(14, 7))
+
+plt.subplot(3, 1, 1)
+plt.plot(benin_df['Timestamp'], benin_df['GHI'], label='Benin GHI')
+plt.legend()
+
+plt.subplot(3, 1, 2)
+plt.plot(sierraleone_df['Timestamp'], sierraleone_df['GHI'], label='Sierra Leone GHI')
+plt.legend()
+
+plt.subplot(3, 1, 3)
+plt.plot(togo_df['Timestamp'], togo_df['GHI'], label='Togo GHI')
+plt.legend()
+
+plt.show()
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Plotting GHI for each dataset
+plt.figure(figsize=(14, 7))
+
+plt.subplot(3, 1, 1)
+plt.plot(benin_df['Timestamp'], benin_df['GHI'], label='Benin GHI')
+plt.legend()
+
+plt.subplot(3, 1, 2)
+plt.plot(sierraleone_df['Timestamp'], sierraleone_df['GHI'], label='Sierra Leone GHI')
+plt.legend()
+
+plt.subplot(3, 1, 3)
+plt.plot(togo_df['Timestamp'], togo_df['GHI'], label='Togo GHI')
+plt.legend()
+
+plt.show()
 
